@@ -75,7 +75,8 @@ myList.appendChild(li);
 
 window.addEventListener('scroll', event => {
   let navigationLinks= document.querySelectorAll ('nav ul li a');
-  let fromTop = window.scrollY;
+  let offset = 90;
+  let fromTop = window.scrollY + offset;
 
   navigationLinks.forEach(link => {
     let section = document.querySelector(link.hash);
